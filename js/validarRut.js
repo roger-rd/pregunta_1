@@ -30,7 +30,7 @@ function verificarRut() {
 
     const valor = rutInput.value.trim();
 
-    if (valor.length >= 12) {
+    if (valor.length >= 7) {
         if (!validarRut(valor)) {
             mensaje.textContent = 'RUT inválido';
             mensaje.style.color = 'red';
@@ -39,7 +39,15 @@ function verificarRut() {
             mensaje.style.color = 'green';
         }
     } else {
-        mensaje.textContent = '(Ej: 12.345.678-9)';
+        mensaje.textContent = '(Ej: 12345678-9)';
         mensaje.style.color = '#888';
     }
 }
+document.getElementById('rut').addEventListener('keypress', function (e) {
+    const key = e.key;
+    const rutValido = /^[0-9kK-]$/;
+
+    if (!rutValido.test(key)) {
+        e.preventDefault();
+    }
+});
