@@ -38,7 +38,7 @@ Este ejercicio corresponde a la **pregunta número 1** del trabajo evaluado. Se 
 
 Puedes abrir el proyecto localmente con cualquier navegador moderno o acceder directamente a través de Netlify:
 
-🔗 [Ver en Netlify](https://taller-aplicaciones-pregunta-1.netlify.app/) *(enlace de ejemplo)*
+🔗 [Ver en App](https://taller-aplicaciones-pregunta-1.netlify.app/) 
 
 ---
 
